@@ -34,4 +34,19 @@
         left: 5px;
     }
 
+    
+    .linedTtile {
+        @apply flex justify-center items-center text-center gap-[18px]
+    }
+
+    .linedTtile:before, .linedTtile:after {
+        content: '';
+        width: 77px;
+        height: 7px;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+        display: block;
+        /* box-sizing: border-box; */
+    }
+
 }
