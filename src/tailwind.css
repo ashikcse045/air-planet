@@ -1,0 +1,37 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins&display=swap');
+
+/* google icon */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .left {
+        position: relative;
+    }
+    .left:after {
+        content:'';
+        position: absolute;
+        width: 5px;
+        height: 200px;
+        background-color: white;
+        rotate: -45deg;
+        right: 5px;
+    }
+    .right {
+        position: relative;
+    }
+    .right:after {
+        content:'';
+        position: absolute;
+        width: 5px;
+        height: 200px;
+        background-color: white;
+        rotate: -45deg;
+        left: 5px;
+    }
+
+}
