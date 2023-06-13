@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Air Planet</title>
+
+    <!-- OwlCarousel css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
     <!-- css -->
     <link rel="stylesheet" href="style.css" />
     <!-- favicon -->
@@ -135,8 +146,8 @@
     </div>
 
     <!-- shop by category -->
-    <div class="container bg-tertiary px-[107px] py-10 text-center">
-      <div class="headings">
+    <div class="container relative bg-tertiary px-[107px] py-10 text-center">
+      <div class="headings text-center">
         <h1
           class="uppercase font-bold text-[40px] leading-[48px] mb-[10px] linedTtile"
         >
@@ -146,6 +157,199 @@
           Discover our carbon dioxide removal services
         </p>
       </div>
+      <div class="cards pt-[92px] box-border owl-carousel">
+        <div class="card bg-white h-[572px] relative flex justify-center">
+          <div
+            class="relative z-20 h-[383px] bg-white border-[10px] border-white overflow-hidden cardImg"
+          >
+            <img
+              class="absolute inset-0 h-full w-full object-none"
+              src="https://plus.unsplash.com/premium_photo-1661824244216-de3ef89de37d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=771&q=80"
+              alt=""
+            />
+          </div>
+          <div
+            class="absolute z-10 bottom-0 left-0 w-full h-[300px] pt-[134px] px-[27px] bg-white border-[2px] border-primary text-left overflow-hidden cardDes"
+          >
+            <h1 class="font-bold text-[32px] leading-[38.73px] mb-[18px]">
+              Biogas
+            </h1>
+            <p class="font-poppins text-[18px] leading-[27px] text-secondary">
+              Biogas is a completely renewable fuel that is produced from
+              biomass and consistes mostly of methane.
+            </p>
+          </div>
+        </div>
+        <div class="card bg-white h-[572px] relative flex justify-center">
+          <div
+            class="relative z-20 h-[383px] bg-white border-[10px] border-white overflow-hidden cardImg"
+          >
+            <img
+              class="absolute inset-0 h-full w-full object-none"
+              src="https://plus.unsplash.com/premium_photo-1661824244216-de3ef89de37d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=771&q=80"
+              alt=""
+            />
+          </div>
+          <div
+            class="absolute z-10 bottom-0 left-0 w-full h-[300px] pt-[134px] px-[27px] bg-white border-[2px] border-primary text-left overflow-hidden cardDes"
+          >
+            <h1 class="font-bold text-[32px] leading-[38.73px] mb-[18px]">
+              Energy Efficiency
+            </h1>
+            <p class="font-poppins text-[18px] leading-[27px] text-secondary">
+              Energy efficient products or systems use lessenergy than
+              conventional te- chnology to perform the same task.
+            </p>
+          </div>
+        </div>
+        <div class="card bg-white h-[572px] relative flex justify-center">
+          <div
+            class="relative z-20 h-[383px] bg-white border-[10px] border-white overflow-hidden cardImg"
+          >
+            <img
+              class="absolute inset-0 h-full w-full object-none"
+              src="https://plus.unsplash.com/premium_photo-1661824244216-de3ef89de37d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=771&q=80"
+              alt=""
+            />
+          </div>
+          <div
+            class="absolute z-10 bottom-0 left-0 w-full h-[300px] pt-[134px] px-[27px] bg-white border-[2px] border-primary text-left overflow-hidden cardDes"
+          >
+            <h1 class="font-bold text-[32px] leading-[38.73px] mb-[18px]">
+              Biomass
+            </h1>
+            <p class="font-poppins text-[18px] leading-[27px] text-secondary">
+              Biomass is a plant-based material that is used as a fuel produce
+              heat or electricity.
+            </p>
+          </div>
+        </div>
+        <div class="card bg-white h-[572px] relative flex justify-center">
+          <div
+            class="relative z-20 h-[383px] bg-white border-[10px] border-white overflow-hidden cardImg"
+          >
+            <img
+              class="absolute inset-0 h-full w-full object-none"
+              src="https://plus.unsplash.com/premium_photo-1661824244216-de3ef89de37d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=771&q=80"
+              alt=""
+            />
+          </div>
+          <div
+            class="absolute z-10 bottom-0 left-0 w-full h-[300px] pt-[134px] px-[27px] bg-white border-[2px] border-primary text-left overflow-hidden cardDes"
+          >
+            <h1 class="font-bold text-[32px] leading-[38.73px] mb-[18px]">
+              Card 4
+            </h1>
+            <p class="font-poppins text-[18px] leading-[27px] text-secondary">
+              Energy efficient products or systems use lessenergy than
+              conventional te- chnology to perform the same task.
+            </p>
+          </div>
+        </div>
+        <div class="card bg-white h-[572px] relative flex justify-center">
+          <div
+            class="relative z-20 h-[383px] bg-white border-[10px] border-white overflow-hidden cardImg"
+          >
+            <img
+              class="absolute inset-0 h-full w-full object-none"
+              src="https://plus.unsplash.com/premium_photo-1661824244216-de3ef89de37d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=771&q=80"
+              alt=""
+            />
+          </div>
+          <div
+            class="absolute z-10 bottom-0 left-0 w-full h-[300px] pt-[134px] px-[27px] bg-white border-[2px] border-primary text-left overflow-hidden cardDes"
+          >
+            <h1 class="font-bold text-[32px] leading-[38.73px] mb-[18px]">
+              Card 5
+            </h1>
+            <p class="font-poppins text-[18px] leading-[27px] text-secondary">
+              Energy efficient products or systems use lessenergy than
+              conventional te- chnology to perform the same task.
+            </p>
+          </div>
+        </div>
+        <div class="card bg-white h-[572px] relative flex justify-center">
+          <div
+            class="relative z-20 h-[383px] bg-white border-[10px] border-white overflow-hidden cardImg"
+          >
+            <img
+              class="absolute inset-0 h-full w-full object-none"
+              src="https://plus.unsplash.com/premium_photo-1661824244216-de3ef89de37d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=771&q=80"
+              alt=""
+            />
+          </div>
+          <div
+            class="absolute z-10 bottom-0 left-0 w-full h-[300px] pt-[134px] px-[27px] bg-white border-[2px] border-primary text-left overflow-hidden cardDes"
+          >
+            <h1 class="font-bold text-[32px] leading-[38.73px] mb-[18px]">
+              Card 6
+            </h1>
+            <p class="font-poppins text-[18px] leading-[27px] text-secondary">
+              Energy efficient products or systems use lessenergy than
+              conventional te- chnology to perform the same task.
+            </p>
+          </div>
+        </div>
+        <div class="card bg-white h-[572px] relative flex justify-center">
+          <div
+            class="relative z-20 h-[383px] bg-white border-[10px] border-white overflow-hidden cardImg"
+          >
+            <img
+              class="absolute inset-0 h-full w-full object-none"
+              src="https://plus.unsplash.com/premium_photo-1661824244216-de3ef89de37d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=771&q=80"
+              alt=""
+            />
+          </div>
+          <div
+            class="absolute z-10 bottom-0 left-0 w-full h-[300px] pt-[134px] px-[27px] bg-white border-[2px] border-primary text-left overflow-hidden cardDes"
+          >
+            <h1 class="font-bold text-[32px] leading-[38.73px] mb-[18px]">
+              Card 7
+            </h1>
+            <p class="font-poppins text-[18px] leading-[27px] text-secondary">
+              Energy efficient products or systems use lessenergy than
+              conventional te- chnology to perform the same task.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="absolute w-[408px] h-[408px] right-0 bottom-0 overflow-hidden">
+        <img class="w-full h-full ml-[100px] mt-[100px]" src="./assets/svgs/circle.svg" alt="">
+      </div>
     </div>
+
+    <!-- our solutions -->
+    <div class="container">
+
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- OwlCarousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout:3000,
+        // center: true,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
