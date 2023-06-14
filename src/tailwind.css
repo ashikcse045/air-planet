@@ -70,15 +70,29 @@
 
     /* owl carosual css */
     .owl-carousel .owl-dots {
-        margin: 77px 0;
+        margin: 10px 0;
     }
+    @media only screen and (min-width: 768px) {
+        .owl-carousel .owl-dots {
+            margin: 35px 0;
+        }
+    }
+
     .owl-carousel button.owl-dot {
         display: inline-block;
-        height: 14px !important;
-        width: 14px !important;
+        height: 12px !important;
+        width: 12px !important;
         background-color: #2BDC9F !important;
-        margin: 0 15px;
+        margin: 0 10px;
         border: none;
+        /* border-radius: 50%; */
+    }
+    @media only screen and (min-width: 768px) {
+        .owl-carousel button.owl-dot {
+            height: 14px !important;
+            width: 14px !important;
+            margin: 0 15px;
+        }
     }
 
     .owl-carousel button.owl-dot.active {
