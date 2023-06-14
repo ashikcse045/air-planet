@@ -36,17 +36,25 @@
 
     
     .linedTtile {
-        @apply flex justify-center items-center text-center gap-[18px]
+        @apply flex justify-center items-center text-center gap-2 lg:gap-[18px]
     }
 
     .linedTtile:before, .linedTtile:after {
         content: '';
-        width: 77px;
+        width: 60px;
         height: 7px;
         border-top: 2px solid #000;
         border-bottom: 2px solid #000;
         display: block;
         /* box-sizing: border-box; */
+    }
+
+    @media only screen and (min-width: 768px) {
+        .linedTtile:before, .linedTtile:after {
+
+            width: 77px;
+
+        }
     }
 
     /* owl carosual css */
@@ -70,5 +78,26 @@
     .cardImg {
         width: calc(100% - 4px);
     }
+    .hex-shape {
+        display: flex;
+    }
+    .hex-shape::before {
+        content: '';
+        width: 50%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: white;
+    }
+
+    /* .waveShape:after {
+        content: '';
+        width: 100%;
+        height: 100px;
+        display: block;
+        background-color: #DDF9F0;
+    } */
 
 }
