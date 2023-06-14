@@ -36,43 +36,56 @@
     <div class="w-full bg-primary">
       <div class="container">
         <div class="flex items-center justify-between overflow-hidden">
-          <div class="logo w-full sm:w-1/2 lg:w-1/4 flex items-center pl-10 lg:pl-24 md:py-5 left">
-            <img class="w-28" src="./assets/img/logo.png" alt="" />
-          </div>
           <div
-            class="nav font-bold flex w-3/4 lg:w-1/2 items-center pl-14 text-center justify-center text-white right"
+            class="logo w-1/2 lg:w-1/4 flex items-center py-3 pl-6 md:pl-10 lg:pl-24 md:py-5 left"
+          >
+            <img class="w-24 md:w-28" src="./assets/img/logo.png" alt="" />
+          </div>
+
+          <!-- menu bar -->
+          <div class="w-1/2 flex items-center justify-end text-right pr-6 md:hidden">
+            <span id="menuBar" class="material-symbols-outlined text-4xl text-white">
+              menu
+            </span>
+          </div>
+
+          <!-- menu -->
+          <div
+            class="hidden absolute md:static top-[72px] w-full bg-primary md:bg-transparent z-50 md:z-0 font-bold md:flex md:w-3/4 lg:w-1/2 items-center md:pl-14 text-center justify-center text-white right menu"
           >
             <ul>
-              <li class="inline-block">
+              <li class="block md:inline-block">
                 <a
-                  class="h-full px-3 lg:px-4 xl:px-8 py-6 rounded-md hover:text-gray-100 transition-colors"
+                  class="h-full md:px-3 py-3 block lg:px-4 xl:px-8 md:py-6 rounded-md hover:text-gray-100 transition-colors"
                   href="#"
                   >Home</a
                 >
               </li>
-              <li class="inline-block">
+              <li class="block md:inline-block">
                 <a
-                  class="h-full px-3 lg:px-4 xl:px-8 py-6 rounded-md hover:text-gray-100 transition-colors"
+                  class="h-full md:px-3 py-3 block lg:px-4 xl:px-8 md:py-6 rounded-md hover:text-gray-100 transition-colors"
                   href="#"
                   >Shop</a
                 >
               </li>
-              <li class="inline-block">
+              <li class="block md:inline-block">
                 <a
-                  class="h-full px-3 lg:px-4 xl:px-8 py-6 rounded-md hover:text-gray-100 transition-colors"
+                  class="h-full md:px-3 py-3 block lg:px-4 xl:px-8 md:py-6 rounded-md hover:text-gray-100 transition-colors"
                   href="#"
                   >Our solution</a
                 >
               </li>
-              <li class="inline-block">
+              <li class="block md:inline-block">
                 <a
-                  class="h-full px-3 lg:px-4 xl:px-8 py-6 rounded-md hover:text-gray-100 transition-colors"
+                  class="h-full md:px-3 py-3 block lg:px-4 xl:px-8 md:py-6 rounded-md hover:text-gray-100 transition-colors"
                   href="#"
                   >Contact</a
                 >
               </li>
             </ul>
           </div>
+
+          <!-- flags and cart -->
           <div
             class="hidden font-bold w-1/4 lg:flex justify-center space-x-6 text-white"
           >
@@ -122,7 +135,7 @@
           >
             <img class="w-full" src="./assets/svgs/wave.svg" alt="" />
           </div>
-  
+
           <div
             class="bannerText absolute left-0 top-0 w-full pt-2 2xl:pt-10 pl-2 sm:pl-8 2xl:pl-[107px] z-40"
           >
@@ -142,7 +155,7 @@
                   services to slow down global warming.
                 </span>
               </p>
-  
+
               <div
                 class="flex flex-col md:flex-row md:justify-between w-full lg:items-center space-y-2 md:space-y-0 mt-3 md:mt-10 pr-1 pb-4 xl:mt-[73px] text-xs lg:text-[18px]"
               >
@@ -164,7 +177,9 @@
     </div>
 
     <!-- shop by category -->
-    <div class="container relative bg-tertiary px-2 lg:px-[107px] py-10 text-center">
+    <div
+      class="container relative bg-tertiary px-2 lg:px-[107px] py-10 text-center"
+    >
       <div class="headings text-center">
         <h1
           class="uppercase font-bold text-lg lg:text-[40px] lg:leading-[48px] mb-[10px] linedTtile"
@@ -357,27 +372,8 @@
     <!-- OwlCarousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <script>
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: false,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        // center: true,
-        autoplayHoverPause: true,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 2,
-          },
-          1000: {
-            items: 3,
-          },
-        },
-      });
-    </script>
+    <!-- custom js -->
+    <script src="./main.js"></script>
+ 
   </body>
 </html>

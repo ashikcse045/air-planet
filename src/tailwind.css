@@ -19,9 +19,20 @@
         height: 200px;
         background-color: white;
         rotate: -45deg;
+        right: 20px;
+    }
+
+    .left:before {
+        content:'';
+        position: absolute;
+        width: 5px;
+        height: 200px;
+        background-color: white;
+        rotate: -45deg;
         right: 5px;
     }
-    .right {
+
+    /* .right {
         position: relative;
     }
     .right:after {
@@ -32,7 +43,7 @@
         background-color: white;
         rotate: -45deg;
         left: 5px;
-    }
+    } */
 
     
     .linedTtile {
