@@ -68,6 +68,39 @@
         }
     }
 
+    .linedTtileWhite {
+        @apply justify-start
+    }
+
+    .linedTtileWhite::before,
+    .linedTtileWhite::after {
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
+
+
+    .solutionCardLine::before {
+        content: '';
+        width: 2px;
+        height: 100%;
+        background-color: #2BDC9F;
+        position: absolute;
+        right: 2px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .solutionCardLine::after {
+        content: '';
+        width: 2px;
+        height: 80%;
+        background-color: #2BDC9F;
+        position: absolute;
+        right: -2px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
     /* owl carosual css */
     .owl-carousel .owl-dots {
         margin: 10px 0;
@@ -124,5 +157,7 @@
         display: block;
         background-color: #DDF9F0;
     } */
+
+    
 
 }
