@@ -61,28 +61,28 @@
             <ul>
               <li class="block md:inline-block">
                 <a
-                  class="h-full md:px-3 py-3 block lg:px-4 xl:px-8 md:py-6 rounded-md hover:text-gray-100 transition-colors"
+                  class="h-full md:px-3 py-3 block lg:px-4 xl:px-8 md:py-6 rounded-md lg:hover:text-gray-100 transition-colors"
                   href="#"
                   >Home</a
                 >
               </li>
               <li class="block md:inline-block">
                 <a
-                  class="h-full md:px-3 py-3 block lg:px-4 xl:px-8 md:py-6 rounded-md hover:text-gray-100 transition-colors"
+                  class="h-full md:px-3 py-3 block lg:px-4 xl:px-8 md:py-6 rounded-md lg:hover:text-gray-100 transition-colors"
                   href="#"
                   >Shop</a
                 >
               </li>
               <li class="block md:inline-block">
                 <a
-                  class="h-full md:px-3 py-3 block lg:px-4 xl:px-8 md:py-6 rounded-md hover:text-gray-100 transition-colors"
+                  class="h-full md:px-3 py-3 block lg:px-4 xl:px-8 md:py-6 rounded-md lg:hover:text-gray-100 transition-colors"
                   href="#"
                   >Our solution</a
                 >
               </li>
               <li class="block md:inline-block">
                 <a
-                  class="h-full md:px-3 py-3 block lg:px-4 xl:px-8 md:py-6 rounded-md hover:text-gray-100 transition-colors"
+                  class="h-full md:px-3 py-3 block lg:px-4 xl:px-8 md:py-6 rounded-md lg:hover:text-gray-100 transition-colors"
                   href="#"
                   >Contact</a
                 >
@@ -151,7 +151,7 @@
             </h1>
             <div class="w-[58%] 2xl:w-[41.8%]">
               <p
-                class="text-secondary font-poppins text-xs sm:text-[18px] sm:leading-[20px] md:leading-[20px] lg:leading-[27px]"
+                class="text-secondary font-poppins text-xs sm:text-sm md:text-[18px] sm:leading-[20px] md:leading-[20px] lg:leading-[27px]"
               >
                 Air4planet provides services to reduce global emissions and ...
                 <span class="hidden sm:inline">
@@ -165,12 +165,12 @@
                 class="flex flex-col md:flex-row md:justify-between w-full lg:items-center space-y-2 md:space-y-0 mt-3 md:mt-10 pr-1 pb-4 xl:mt-[73px] text-xs lg:text-[18px]"
               >
                 <button
-                  class="uppercase text-primary font-bold border border-primary hover:bg-primary hover:text-white md:px-6 py-2 md:py-4 rounded-md transition-colors"
+                  class="uppercase text-primary font-bold border border-primary lg:hover:bg-primary lg:hover:text-white md:px-6 py-2 md:py-4 rounded-md transition-colors"
                 >
                   OUR SOLUTION
                 </button>
                 <button
-                  class="uppercase text-white bg-primary font-bold border border-primary hover:bg-white hover:text-primary md:px-6 py-2 md:py-4 rounded-md transition-colors"
+                  class="uppercase text-white bg-primary font-bold border border-primary lg:hover:bg-white lg:hover:text-primary md:px-6 py-2 md:py-4 rounded-md transition-colors"
                 >
                   ORDER CARBON DIOXIDE REMOVAL
                 </button>
@@ -347,7 +347,7 @@
     <!-- our solutions -->
     <div class="container">
       <div
-        class="w-full relative bg-bottom px-2 lg:px-[107px] py-[131px] text-center"
+        class="w-full relative bg-bottom px-2 xl:px-[107px] py-10 xl:py-[131px] text-center"
         style="
           background-image: linear-gradient(
               rgba(43, 220, 159, 0.88),
@@ -359,7 +359,9 @@
         "
       >
         <div class="w-full">
-          <div class="grid grid-flow-row grid-cols-2 gap-7">
+          <div
+            class="lg:grid lg:grid-flow-row lg:grid-cols-2 lg:gap-5 xl:gap-7"
+          >
             <!-- headings -->
             <div class="headings text-justify">
               <h1
@@ -367,7 +369,9 @@
               >
                 our solution
               </h1>
-              <p class="font-poppins text-[18px] leading-[27px] text-white">
+              <p
+                class="font-poppins text-sm lg:text-[18px] leading-5 lg:leading-[27px] text-white"
+              >
                 Air4planet&apos;s service is open to companies, organizations
                 and individuals. You buy our services in a simple, secure,
                 reliable and fully automated way. Your purchases with us will
@@ -378,11 +382,11 @@
 
             <!-- customer card -->
             <div
-              class="flex flex-row justify-between gap-3 py-4 px-6 bg-white border-[5px] border-primary h-56"
+              class="space-y-3 sm:flex sm:flex-row sm:justify-between sm:gap-3 py-4 px-2 sm:px-6 bg-white border-[5px] border-primary sm:h-56"
             >
               <!-- svg -->
               <div
-                class="flex text-center items-center font-bold w-1/3 relative solutionCardLine"
+                class="flex text-center items-center font-bold sm:w-1/3 pb-4 sm:pb-0 relative solutionCardLine"
               >
                 <div class="w-full block">
                   <img
@@ -390,12 +394,14 @@
                     src="./assets/svgs//customer.svg"
                     alt=""
                   />
-                  <h3 class="text-2xl text-secondary">Customer</h3>
+                  <h3 class="text-xl sm:text-2xl text-secondary">Customer</h3>
                 </div>
               </div>
               <!-- text -->
-              <div class="flex items-center text-start w-2/3 px-2">
-                <p class="font-poppins text-lg leading-7 text-secondary">
+              <div class="flex items-center text-start sm:w-2/3">
+                <p
+                  class="font-poppins text-sm sm:text-lg sm:leading-7 text-secondary"
+                >
                   As a customer you can bu y voluntary carbon credits or other
                   carbon dioxide removal from our online shop in an easy,
                   reliably and fully automatic way.
@@ -405,11 +411,11 @@
 
             <!-- Suppliers card -->
             <div
-              class="flex flex-row justify-between gap-3 py-4 px-6 bg-white border-[5px] border-primary h-56"
+              class="space-y-3 sm:flex sm:flex-row sm:justify-between sm:gap-3 py-4 px-2 sm:px-6 bg-white border-[5px] border-primary sm:h-56"
             >
               <!-- svg -->
               <div
-                class="flex items-center text-center font-bold w-1/3 relative solutionCardLine"
+                class="flex text-center items-center font-bold sm:w-1/3 pb-4 sm:pb-0 relative solutionCardLine"
               >
                 <div class="w-full block">
                   <img
@@ -417,12 +423,14 @@
                     src="./assets/svgs//suppliers.svg"
                     alt=""
                   />
-                  <h3 class="text-2xl text-secondary">Suppliers</h3>
+                  <h3 class="text-xl sm:text-2xl text-secondary">Suppliers</h3>
                 </div>
               </div>
               <!-- text -->
-              <div class="flex items-center text-start w-2/3 px-2">
-                <p class="font-poppins text-lg leading-7 text-secondary">
+              <div class="flex items-center text-start sm:w-2/3">
+                <p
+                  class="font-poppins text-sm sm:text-lg sm:leading-7 text-secondary"
+                >
                   Our chosen suppliers develop and invest in carbon dioxide
                   removal innovations and technologies . The suppliers have
                   solutions to remove carbon dioxide from the atmosphere on a
@@ -433,11 +441,11 @@
 
             <!-- Audit card -->
             <div
-              class="flex flex-row justify-between gap-3 py-4 px-6 bg-white border-[5px] border-primary h-56"
+              class="space-y-3 sm:flex sm:flex-row sm:justify-between sm:gap-3 py-4 px-2 sm:px-6 bg-white border-[5px] border-primary sm:h-56"
             >
               <!-- svg -->
               <div
-                class="flex text-center items-center font-bold w-1/3 relative solutionCardLine"
+                class="flex text-center items-center font-bold sm:w-1/3 pb-4 sm:pb-0 relative solutionCardLine"
               >
                 <div class="w-full block">
                   <img
@@ -445,12 +453,14 @@
                     src="./assets/svgs//audit.svg"
                     alt=""
                   />
-                  <h3 class="text-2xl text-secondary">Audit</h3>
+                  <h3 class="text-xl sm:text-2xl text-secondary">Audit</h3>
                 </div>
               </div>
               <!-- text -->
-              <div class="flex items-center text-start w-2/3 px-2">
-                <p class="font-poppins text-lg leading-7 text-secondary">
+              <div class="flex items-center text-start sm:w-2/3">
+                <p
+                  class="font-poppins text-sm sm:text-lg sm:leading-7 text-secondary"
+                >
                   The suppliers go through a verification process to verify that
                   they meet the set criteria and comply with relevant requ-
                   irements. All documentation is presented under each product.
@@ -460,11 +470,11 @@
 
             <!-- Exhange card -->
             <div
-              class="flex flex-row justify-between gap-3 py-4 px-6 bg-white border-[5px] border-primary h-56"
+              class="space-y-3 sm:flex sm:flex-row sm:justify-between sm:gap-3 py-4 px-2 sm:px-6 bg-white border-[5px] border-primary sm:h-56"
             >
               <!-- svg -->
               <div
-                class="flex text-center items-center font-bold w-1/3 relative solutionCardLine"
+                class="flex text-center items-center font-bold sm:w-1/3 pb-4 sm:pb-0 relative solutionCardLine"
               >
                 <div class="w-full block">
                   <img
@@ -472,12 +482,14 @@
                     src="./assets/svgs//exchange.svg"
                     alt=""
                   />
-                  <h3 class="text-2xl text-secondary">Exhange</h3>
+                  <h3 class="text-xl sm:text-2xl text-secondary">Exhange</h3>
                 </div>
               </div>
               <!-- text -->
-              <div class="flex items-center text-start w-2/3 px-2">
-                <p class="font-poppins text-lg leading-7 text-secondary">
+              <div class="flex items-center text-start sm:w-2/3">
+                <p
+                  class="font-poppins text-sm sm:text-lg sm:leading-7 text-secondary"
+                >
                   As a customer you can bu y voluntary carbon credits or other
                   carbon dioxide removal from our online shop in an easy,
                   reliably and fully automatic way.
@@ -487,11 +499,11 @@
 
             <!-- Certificate card -->
             <div
-              class="flex flex-row justify-between gap-3 py-4 px-6 bg-white border-[5px] border-primary h-56"
+              class="space-y-3 sm:flex sm:flex-row sm:justify-between sm:gap-3 py-4 px-2 sm:px-6 bg-white border-[5px] border-primary sm:h-56"
             >
               <!-- svg -->
               <div
-                class="flex text-center items-center font-bold w-1/3 relative solutionCardLine"
+                class="flex text-center items-center font-bold sm:w-1/3 pb-4 sm:pb-0 relative solutionCardLine"
               >
                 <div class="w-full block">
                   <img
@@ -499,12 +511,16 @@
                     src="./assets/svgs//certificate.svg"
                     alt=""
                   />
-                  <h3 class="text-2xl text-secondary">Certificate</h3>
+                  <h3 class="text-xl sm:text-2xl text-secondary">
+                    Certificate
+                  </h3>
                 </div>
               </div>
               <!-- text -->
-              <div class="flex items-center text-start w-2/3 px-2">
-                <p class="font-poppins text-lg leading-7 text-secondary">
+              <div class="flex items-center text-start sm:w-2/3">
+                <p
+                  class="font-poppins text-sm sm:text-lg sm:leading-7 text-secondary"
+                >
                   As a customer you can bu y voluntary carbon credits or other
                   carbon dioxide removal from our online shop in an easy,
                   reliably and fully automatic way.
@@ -513,13 +529,17 @@
             </div>
           </div>
         </div>
-        
-        <div class="orderBtn pt-32">
-          <button class="capitalize font-bold text-lg text-primary bg-white rounded-md px-5 py-5 hover:bg-primary hover:text-white border-2 border-white transition-colors">ORDER CARBON DIOXIDE REMOVAL</button>
+
+        <div class="orderBtn pt-8 md:pt-16 pb-8 xl:mb-0 xl:pt-24">
+          <button
+            class="capitalize font-bold text-sm sm:text-lg text-primary bg-white rounded-md px-5 py-5 lg:hover:bg-primary lg:hover:text-white border-2 border-white transition-colors"
+          >
+            ORDER CARBON DIOXIDE REMOVAL
+          </button>
         </div>
 
         <div class="absolute left-0 bottom-0 w-full">
-          <img class="w-full" src="./assets/svgs/tringle.svg" alt="">
+          <img class="w-full" src="./assets/svgs/tringle.svg" alt="" />
         </div>
       </div>
     </div>
