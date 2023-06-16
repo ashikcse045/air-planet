@@ -9,7 +9,7 @@ $(document).ready(function () {
     }
   });
 
-  $(".owl-carousel").owlCarousel({
+  $(".categorySlider").owlCarousel({
     loop: true,
     margin: 30,
     nav: false,
@@ -28,5 +28,17 @@ $(document).ready(function () {
         items: 3,
       },
     },
+  });
+
+  $(".partnerSlider").owlCarousel({
+    loop: true,
+    nav: false,
+    dots:false,
+    margin:20,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    // center: true,
+    autoplayHoverPause: true,
+    items: 1,
   });
 });
