@@ -9,6 +9,9 @@
 @tailwind utilities;
 
 @layer components {
+    .menu {
+        @apply hidden absolute md:static top-[72px] w-full bg-primary md:bg-transparent z-[999] md:z-0 font-bold md:flex md:w-3/4 lg:w-1/2 items-center md:pl-14 text-center justify-center text-white
+    }
     .left {
         position: relative;
     }
