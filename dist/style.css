@@ -749,6 +749,72 @@ video {
   }
 }
 
+.card {
+  cursor: pointer;
+}
+
+.cardImg {
+  width: calc(100% - 4px);
+}
+
+.cardImg img {
+  transition: .4s;
+}
+
+.cardImg img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cardDes{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 10;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 100px;
+  text-align: left;
+}
+
+@media (min-width: 768px){
+  .cardDes{
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+}
+
+@media (min-width: 1280px){
+  .cardDes{
+    padding-top: 134px;
+  }
+}
+
+.cardDes::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 2px solid #00d58b;
+  border-top: none;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: block;
+  transition: height 0.5s linear 0.5s, width 0.5s linear;
+}
+
+@media only screen and (min-width: 768px) {
+  .card:hover .cardDes::before {
+    width: 20%;
+    height: 0;
+    transition: height 0.5s linear, width 0.5s linear 0.5s;
+  }
+}
+
 .solutionCardLine::before {
   content: "";
   width: 60%;
@@ -832,10 +898,6 @@ video {
 .categorySlider button.owl-dot.active {
   background-color: white !important;
   border: 1px solid #2bdc9f;
-}
-
-.cardImg {
-  width: calc(100% - 4px);
 }
 
 /* .partnerSlider{
@@ -1050,10 +1112,6 @@ textarea::-webkit-resizer {
   height: 250px;
 }
 
-.h-\[300px\]{
-  height: 300px;
-}
-
 .h-\[400px\]{
   height: 400px;
 }
@@ -1240,10 +1298,6 @@ textarea::-webkit-resizer {
   border-width: 10px;
 }
 
-.border-\[2px\]{
-  border-width: 2px;
-}
-
 .border-\[5px\]{
   border-width: 5px;
 }
@@ -1401,14 +1455,6 @@ textarea::-webkit-resizer {
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pt-\[100px\]{
-  padding-top: 100px;
-}
-
-.text-left{
-  text-align: left;
 }
 
 .text-center{
@@ -1773,11 +1819,6 @@ textarea::-webkit-resizer {
     padding-right: 1.5rem;
   }
 
-  .md\:px-\[27px\]{
-    padding-left: 27px;
-    padding-right: 27px;
-  }
-
   .md\:py-16{
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -2044,10 +2085,6 @@ textarea::-webkit-resizer {
 
   .xl\:pt-24{
     padding-top: 6rem;
-  }
-
-  .xl\:pt-\[134px\]{
-    padding-top: 134px;
   }
 }
 
