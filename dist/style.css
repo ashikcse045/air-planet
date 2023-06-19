@@ -564,6 +564,10 @@ video {
   }
 }
 
+.fill-icon {
+  font-variation-settings: "FILL" 1;
+}
+
 .menu{
   position: absolute;
   top: 72px;
@@ -680,19 +684,6 @@ video {
   right: 5px;
 }
 
-/* .right {
-        position: relative;
-    }
-    .right:after {
-        content:'';
-        position: absolute;
-        width: 5px;
-        height: 200px;
-        background-color: white;
-        rotate: -45deg;
-        left: 5px;
-    } */
-
 .linedTtile{
   display: flex;
   align-items: center;
@@ -758,7 +749,7 @@ video {
 }
 
 .cardImg img {
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .cardImg img:hover {
@@ -900,10 +891,6 @@ video {
   border: 1px solid #2bdc9f;
 }
 
-/* .partnerSlider{
-        text-align: center;
-    } */
-
 .hex-shape {
   display: flex;
 }
@@ -918,14 +905,6 @@ video {
   top: 0;
   background-color: white;
 }
-
-/* .waveShape:after {
-        content: '';
-        width: 100%;
-        height: 100px;
-        display: block;
-        background-color: #DDF9F0;
-    } */
 
 .borderdCircle::before,
   .borderdCircle::after {
@@ -973,6 +952,74 @@ textarea::-webkit-resizer {
   border-width: 8px;
   border-style: solid;
   border-color: transparent #2bdc9f #2bdc9f transparent;
+}
+
+.playBtn{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  height: 3.5rem;
+  width: 3.5rem;
+  --tw-translate-x: -50%;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 213 139 / var(--tw-bg-opacity));
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .playBtn{
+    height: 6rem;
+    width: 6rem;
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+.playBtn {
+  animation-name: ripple;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 #2bdc9f, 0 0 0 0 #2bdc9f;
+  }
+
+  50% {
+    box-shadow: 0 0 0 8px #2bdc9ee4, 0 0 0 16px #2bdc9ecd;
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 #2bdc9f, 0 0 0 0 #2bdc9f;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 #2bdc9f, 0 0 0 0 #2bdc9f;
+    }
+
+    50% {
+      box-shadow: 0 0 0 10px #2bdc9ee4, 0 0 0 20px #2bdc9ecd;
+    }
+
+    100% {
+      box-shadow: 0 0 0 0 #2bdc9f, 0 0 0 0 #2bdc9f;
+    }
+  }
 }
 
 .absolute{
