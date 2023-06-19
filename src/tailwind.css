@@ -12,6 +12,30 @@
   .menu {
     @apply hidden absolute md:static top-[72px] w-full bg-primary md:bg-transparent z-[999] md:z-0 font-bold md:flex md:w-3/4 lg:w-1/2 items-center md:pl-14 text-center justify-center text-white;
   }
+
+  .navLink {
+    @apply h-full md:px-3 py-3 block lg:px-4 xl:px-8 md:py-6 rounded-md lg:hover:text-gray-100 transition-colors relative;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .navLink::after {
+      content: "";
+      width: 0;
+      height: 3px;
+      background-color: #fff;
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 5px;
+      z-index: 99;
+      transition: 0.4s;
+    }
+  
+    .navLink:hover::after {
+      width: 100%;
+    }
+  }
+
   .left {
     position: relative;
   }
@@ -244,6 +268,6 @@
   textarea::-webkit-resizer {
     border-width: 8px;
     border-style: solid;
-    border-color: transparent #2BDC9F #2BDC9F transparent;
+    border-color: transparent #2bdc9f #2bdc9f transparent;
   }
 }
